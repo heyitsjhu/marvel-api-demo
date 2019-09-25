@@ -4,13 +4,16 @@ import BaseApi from './BaseApi';
 
 export default class ComicApi {
   /**
-   * Set GET request to retrieve all comics.
+   * Set GET request to retrieve Marvel characters.
    */
-  fetchCharacters() {
+  fetchCharacters(params) {
     return axios
-      .get('/characters', { ...BaseApi.configuration })
+      .get('/characters', {
+        ...BaseApi.configuration,
+        params: { ...params, ...BaseApi.configuration.params }
+      })
       .then(resp => {
-        Logger.info('MarvelAPI (Comics) fetchCharacters() response:', resp);
+        Logger.info(this.constructor.name, 'fetchCharacters():', resp);
 
         if (resp.status === 200) {
           return resp.data.data.results;
@@ -19,7 +22,7 @@ export default class ComicApi {
         }
       })
       .catch(error => {
-        Logger.error('MarvelAPI (Comics) fetchCharacters() error:', error);
+        Logger.error(this.constructor.name, 'fetchCharacters():', error);
         return error;
       });
   }

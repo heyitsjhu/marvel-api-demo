@@ -8,12 +8,12 @@ import TopAppBar, {
 } from '@material/react-top-app-bar';
 import MaterialIcon from '@material/react-material-icon';
 
-import '@material/react-top-app-bar/dist/top-app-bar.css';
+import '@material/react-top-app-bar/index.scss';
 
-const MTopAppBar = props => {
+const MTopAppBar = () => {
   return (
     <>
-      <TopAppBar>
+      <TopAppBar fixed>
         <TopAppBarRow>
           <TopAppBarSection align="start">
             <TopAppBarIcon navIcon tabIndex={0}>
@@ -23,14 +23,15 @@ const MTopAppBar = props => {
                 onClick={() => console.log('click')}
               />
             </TopAppBarIcon>
-            <TopAppBarTitle>Marvel Comics</TopAppBarTitle>
+            <TopAppBarTitle>Marvel Characters</TopAppBarTitle>
           </TopAppBarSection>
+
           <TopAppBarSection align="end">
             <TopAppBarIcon actionItem tabIndex={0}>
               <MaterialIcon
-                aria-label="print page"
+                aria-label="account page"
                 icon="person"
-                onClick={() => console.log('print')}
+                onClick={() => console.log('account')}
               />
             </TopAppBarIcon>
           </TopAppBarSection>

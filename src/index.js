@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import 'onsenui/css/onsenui.css';
-import 'onsenui/css/onsen-css-components.css';
-import './index.css';
-import App from './App';
+
+import App from './components/App';
 import * as serviceWorker from './serviceWorker';
+
+import './index.scss';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
