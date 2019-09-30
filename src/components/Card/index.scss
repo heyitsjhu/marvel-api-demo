@@ -1,3 +1,5 @@
+@import '@material/react-card/index.scss';
+
 .mdc-card {
   h2 {
     margin-left: 0.5rem;
@@ -6,10 +8,9 @@
     line-height: 1.5rem;
     font-weight: 400;
     text-align: center;
-
-    .mdc-typography--body1 {
-      margin-left: 0.5rem;
-      margin-right: 0.5rem;
-    }
+  }
+  .mdc-typography--body1 {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
   }
 }

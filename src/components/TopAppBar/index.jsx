@@ -8,7 +8,7 @@ import TopAppBar, {
 } from '@material/react-top-app-bar';
 import MaterialIcon from '@material/react-material-icon';
 
-import '@material/react-top-app-bar/index.scss';
+import './index.scss';
 
 const MTopAppBar = () => {
   return (

@@ -10,7 +10,6 @@ import Card, {
 import MaterialIcon from '@material/react-material-icon';
 import { Headline2 } from '@material/react-typography';
 
-import '@material/react-card/dist/card.css';
 import './index.scss';
 
 const MCard = props => {
