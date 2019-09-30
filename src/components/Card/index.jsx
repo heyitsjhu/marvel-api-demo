@@ -11,7 +11,7 @@ import MaterialIcon from '@material/react-material-icon';
 import { Headline2 } from '@material/react-typography';
 
 import '@material/react-card/dist/card.css';
-import './index.css';
+import './index.scss';
 
 const MCard = props => {
   const { content, onShare, shareable, title, thumbnail } = props;
@@ -29,7 +29,7 @@ const MCard = props => {
       </TruncateMarkup>
       <CardActions>
         <CardActionButtons>
-          <Button raised>Click Me</Button>
+          <Button raised>More Info</Button>
         </CardActionButtons>
 
         {shareable && (

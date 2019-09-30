@@ -1,3 +1,5 @@
+A React application that makes a simple GET request to Marvel's API and retrieves a set of characters to display.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
